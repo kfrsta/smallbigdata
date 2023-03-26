@@ -1,0 +1,5 @@
+connection:
+  host: "pgsql-188028.srv.hoster.ru"
+  database: "srv188028_smallbigdata"
+  user: "srv188028_admin"
+  password: "kaboupi27"
