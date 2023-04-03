@@ -51,15 +51,15 @@ def insert_row(df, idx, table_name: str) -> str:
     columns = edit_columns(df.columns)
     list_of_types = get_sql_dtypes(df=df)
 
-    for i in columns:
-        sql += f'{i}, '
+    for col in columns:
+        sql += f'{col}, '
     sql = sql.rstrip(', ') + ') VALUES ('
 
-    for i in range(df.shape[1]):
-        if list_of_types[i] == 'VARCHAR':
-            sql += f"'{df[df.columns[i]][idx]}', "
+    for col in range(df.shape[1]):
+        if list_of_types[col] == 'VARCHAR':
+            sql += f"'{df[df.columns[col]][idx]}', "
         else:
-            sql += f"{df[df.columns[i]][idx]}, "
+            sql += f"{df[df.columns[col]][idx]}, "
 
     sql = sql.rstrip(', ') + ');'
 

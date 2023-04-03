@@ -2,5 +2,6 @@ numpy
 pandas
 psycopg2
 pyyaml
+sqlalchemy
 loguru
 tqdm
