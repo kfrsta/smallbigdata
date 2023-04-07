@@ -3,5 +3,7 @@ pandas
 psycopg2
 pyyaml
 sqlalchemy
+scikit-learn
+joblib
 loguru
 tqdm
