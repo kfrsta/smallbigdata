@@ -4,6 +4,9 @@ psycopg2
 pyyaml
 sqlalchemy
 scikit-learn
+seaborn
 joblib
 loguru
 tqdm
+ipython
+ipykernel
